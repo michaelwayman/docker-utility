@@ -1,0 +1,60 @@
+@import '../../_variables.scss';
+
+.sidebar {
+  background-color: $sidebar;
+  flex: 0 1 auto;
+  min-width: $sidebarminwidth;
+  max-width: $sidebarmaxwidth;
+  align-self: stretch;
+  border-right: 1px solid $bordergray;
+  overflow-y: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  .item {
+    padding: $sidebaritempadding;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: default;
+
+    &:hover {
+      background: $sidebaritemhover;
+    }
+
+    &.active {
+      background: $sidebaractiveitem;
+    }
+
+    p {
+      font-size: $sidebaritemfontsize;
+      line-height: $sidebaritemlineheight;
+      margin: 0;
+      color: #2f2f2f;
+      word-break: break-word;
+      word-wrap: break-word;
+      max-width: 170px;
+    }
+
+    h3 {
+      max-width: 240px;
+      font-size: $smallerfont;
+      font-family: robotoMedium;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+      word-break: break-word;
+    }
+
+    > .content {
+      order: 0;
+      flex: 1 0 auto;
+      align-self: stretch;
+      max-width: 240px;
+    }
+  }
+}

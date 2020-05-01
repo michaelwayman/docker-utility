@@ -1,0 +1,92 @@
+@import '../../_variables.scss';
+
+.sidebarPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  flex: 1 1 100%;
+  word-break: break-word;
+
+  > .contentWrapper {
+    flex: 1 1 auto;
+    align-self: stretch;
+
+    > .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: flex-start;
+      overflow-y: auto;
+    }
+
+    .bottomContentWrapper {
+      height: 100%;
+      padding: 0 $sp-bottompadding $sp-bottompadding $sp-bottompadding;
+      flex: 1 1 auto;
+      align-self: stretch;
+    }
+    .bottomContent {
+      height: 100%;
+      width: 100%;
+    }
+
+    .topContentWrapper {
+      flex: 0 0 $sp-topheight;
+      align-self: stretch;
+    }
+    .topContent {
+      height: $sp-topheight;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+
+      .computer {
+        max-height: 100%;
+        max-width: 100%;
+        flex: 1 1 50%;
+        align-self: auto;
+
+        img {
+          max-width: 300px;
+        }
+      }
+
+      .commands {
+        height: 100%;
+        flex: 1 1 50%;
+        align-self: auto;
+
+        .inner {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+
+          .commandContainer {
+            flex: 0 0 auto;
+            align-self: auto;
+          }
+
+          .button {
+            margin: $sp-topbuttonmargin 0;
+            width: $sp-topbuttonwidth;
+          }
+        }
+      }
+
+    }
+  }
+
+}

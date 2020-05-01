@@ -1,0 +1,101 @@
+@import './_variables.scss';
+
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: robotoLight;
+  color: #2f2f2f;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.appHeader {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: stretch;
+  background: $darkblue;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    li {
+      padding: 16px 0;
+      margin: 0;
+      font-family: robotoMedium;
+      color: $lightgray1;
+      display: inline-block;
+      border-right: 1px solid $bordergray;
+      flex: 1 1 auto;
+      align-self: auto;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background: $lightblue;
+      }
+
+      &.active {
+        background: $lightblue;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.appContent {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: stretch;
+  display: flex;
+  background: #f9f9f9;
+}
+
+.input {
+  line-height: 18px;
+  border-radius: 5px;
+  border: 1px solid $bordergray;
+  font-family: robotoLight;
+  color: #2f2f2f;
+  padding: 6px 8px;
+  transition: box-shadow 0.2s ease-out;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none !important;
+    border: 1px solid rgba(0, 156, 255, 1);
+    box-shadow: 0 0 3px rgba(0, 156, 255, 1);
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.regularFont {
+  font-family: robotoMedium;
+}

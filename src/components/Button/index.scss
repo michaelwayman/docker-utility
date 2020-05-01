@@ -1,0 +1,67 @@
+@import '../../_variables.scss';
+
+.button {
+  margin: 16px 0;
+  background: linear-gradient(to bottom, $lightblue 0%, $darkblue 100%);
+  border-radius: $buttonradius;
+  height: $buttonheight;
+  line-height: $buttonheight;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  &.open,
+  &:hover {
+    background: $lightblue;
+  }
+
+  &.red {
+    background: linear-gradient(to bottom, $lightred 0%, $darkred 100%);
+  }
+  &.red.open,
+  &.red:hover {
+    background: $lightred;
+  }
+
+  span {
+    text-align: center;
+    font-size: $smallerfont;
+    font-family: robotoMedium;
+    color: $buttontext;
+  }
+
+  > .dropdown {
+    background: $buttondropdown;
+    position: absolute;
+    right: 0;
+    height: 0;
+    width: max-content;
+    overflow: hidden;
+    z-index: 5;
+  }
+
+  &.open > .dropdown {
+    border: 1px solid $bordergray;
+    border-radius: 3px;
+    height: max-content;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 4px 18px;
+        font-size: $smallerfont;
+        border-bottom: 1px solid $bordergray;
+
+        &:hover {
+          background: $buttondropdownhover;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

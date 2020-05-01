@@ -1,0 +1,54 @@
+$lightblue: rgba(0, 156, 255, 31);
+$darkblue: rgba(0, 126, 229, 1);
+
+$lightred: rgba(255, 0, 28, 1);
+$darkred: rgba(202, 18, 39, 1);
+
+$bordergray: #e9e9e9;
+
+$lightgray1: #f9f9f9;
+$lighttext: $lightgray1;
+$lightgray2: #f1f1f1;
+$lightgray3: #e0e0e0;
+
+$smallerfont: 14px;
+
+$tab: $lightgray3;
+$activetab: $lightgray2;
+$tabcontent: $activetab;
+$tabborder: $bordergray;
+$tabborderradius: 5px;
+$tabwidth: 128px;
+$tabheight: 32px;
+$tabinnerpadding: 16px;
+
+$buttonheight: 32px;
+$buttonradius: 5px;
+$buttontext: $lightgray1;
+$buttondropdown: $lightgray2;
+$buttondropdownhover: $bordergray;
+
+$sp-topheight: 250px;
+$sp-topbuttonwidth: 160px;
+$sp-topbuttonmargin: 16px;
+$sp-bottompadding: 24px;
+
+$modalbackdrop: rgba(0, 0, 0, 0.7);
+$modal: #ffffff;
+$modalwidth: 500px;
+$modalinnerpadding: 24px 48px;
+$modaltopposition: 100px;
+$modalradius: 5px;
+$modalclose: #2f2f2f;
+$modalclosehover: #0f0f0f;
+$modalclosebuttonsize: 20px;
+$modalclosemargin: 8px;
+
+$sidebar: #ffffff;
+$sidebarminwidth: 250px;
+$sidebarmaxwidth: 300px;
+$sidebaritempadding: 16px 0 16px 0;
+$sidebaritemhover: rgba(245, 245, 245, 1);
+$sidebaractiveitem: rgba(240, 240, 240, 1);
+$sidebaritemfontsize: 12px;
+$sidebaritemlineheight: $sidebaritemfontsize + 4px;

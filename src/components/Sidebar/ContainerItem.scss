@@ -1,0 +1,21 @@
+@import '../../_variables.scss';
+
+.containerItem {
+  .iconWrapper {
+    order: 0;
+    flex: 0 0 auto;
+    align-self: center;
+    padding: 0 24px;
+
+    .icon {
+      background-color: #D8DEDE;
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+
+      &.running {
+        background-color: #00D14D;
+      }
+    }
+  }
+}

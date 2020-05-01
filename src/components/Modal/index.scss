@@ -1,0 +1,71 @@
+@import '../../_variables.scss';
+
+.modalBackdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $modalbackdrop;
+  z-index: 500;
+}
+
+.modal {
+  left: 50%;
+  top: -1000px;
+  transition: top 0.3s;
+  transform: translate3d(-50%, 0, 0);
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  border-radius: $modalradius;
+  box-shadow: 0 0 20px -2px black;
+
+  &.active {
+    top: $modaltopposition;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .button {
+    margin-top: 24px;
+  }
+
+  .closeContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1500;
+    cursor: pointer;
+  }
+
+  .close {
+    clip-path: polygon(15% 0, 0 15%, 35% 50%, 0 85%, 15% 100%, 50% 65%,
+            85% 100%, 100% 85%, 65% 50%, 100% 15%, 85% 0, 50% 35%);
+    height: $modalclosebuttonsize;
+    width: $modalclosebuttonsize;
+    background: $modalclose;
+    margin: $modalclosemargin;
+    &:hover {
+      background: $modalclosehover;
+    }
+  }
+}
+
+.modalContent {
+  border: 1px solid $bordergray;
+  border-radius: $modalradius;
+  background: $modal;
+
+  > div {
+    padding: $modalinnerpadding;
+    width: $modalwidth;
+
+    p {
+      font-size: $smallerfont;
+    }
+  }
+}

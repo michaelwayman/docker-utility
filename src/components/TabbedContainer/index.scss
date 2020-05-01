@@ -1,0 +1,69 @@
+@import '../../_variables.scss';
+
+.tabsContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+
+  table {
+    font-size: 12px;
+    tr {
+      line-height: 20px;
+    }
+
+    .title {
+      font-family: robotoMedium;
+      word-break: keep-all;
+      white-space: nowrap;
+      vertical-align: top;
+    }
+  }
+
+  .tabs {
+    .tab {
+      background: $tab;
+      height: $tabheight;
+      line-height: $tabheight;
+      font-size: $smallerfont;
+      font-family: robotoMedium;
+      text-align: center;
+      width: $tabwidth;
+      display: inline-block;
+      border-top-left-radius: $tabborderradius;
+      border-top-right-radius: $tabborderradius;
+      border-top: 1px solid $tabborder;
+      border-left: 1px solid $tabborder;
+      border-right: 1px solid $tabborder;
+      cursor: pointer;
+
+      &.active {
+        background: $activetab;
+      }
+    }
+  }
+  .tabContentWrapper {
+    flex: 1 1 auto;
+    align-self: stretch;
+    background: $tabcontent;
+    border-top-right-radius: $tabborderradius;
+    border-bottom-left-radius: $tabborderradius;
+    border-bottom-right-radius: $tabborderradius;
+    border-bottom: 1px solid $tabborder;
+    border-left: 1px solid $tabborder;
+    border-right: 1px solid $tabborder;
+
+    .tabContent {
+      padding: $tabinnerpadding;
+    }
+  }
+}
+
+.imageContainersTab {
+  td {
+    padding-right: 8px;
+  }
+}

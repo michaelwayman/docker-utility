@@ -1,0 +1,78 @@
+@import '../../_variables.scss';
+
+
+.createContainerModal {
+
+  .title {
+    margin-bottom: 8px;
+    font-family: robotoMedium;
+  }
+  .name {
+    border-bottom: 1px solid $bordergray;
+    width: 100%;
+    padding-bottom: 12px;
+    .input {
+      width: 100%;
+    }
+  }
+  .ports {
+    padding-top: 12px;
+    width: 100%;
+    border-bottom: 1px solid $bordergray;
+    padding-bottom: 12px;
+    span:last-child {
+      margin-left: 24px;
+    }
+    input {
+      width: 64px;
+    }
+  }
+  .mounts {
+    padding-top: 12px;
+    width: 100%;
+    .input {
+      width: 100%;
+    }
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    vertical-align: center;
+
+    .input {
+      flex: 1 1 auto;
+      align-self: center;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .inputButton {
+      background: #e1e1e1;
+      border-bottom: 1px solid $bordergray;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 0 8px;
+      flex: 0 0 auto;
+      align-self: center;
+      vertical-align: center;
+      height: 31px;
+      cursor: pointer;
+
+      &:hover {
+        background: #f1f1f1;
+
+      }
+
+      img {
+        height: 31px;
+        width: 31px;
+      }
+    }
+  }
+}
